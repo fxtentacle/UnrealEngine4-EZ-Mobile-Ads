@@ -10,6 +10,8 @@
 
 void FAdMobModule::ShowBanner(enAdsBannerPos pos)
 {
+    if(!IsBannerReady()) UE_LOG(LogTemp, Warning, TEXT("AdMob on iOS will not display uncached banners."));
+
     UIViewController* curViewController = (UIViewController*)[IOSAppDelegate GetDelegate].IOSController;
 
     dispatch_async(dispatch_get_main_queue(), ^{
