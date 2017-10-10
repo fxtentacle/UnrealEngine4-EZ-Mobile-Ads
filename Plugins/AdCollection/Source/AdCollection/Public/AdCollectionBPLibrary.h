@@ -56,7 +56,7 @@ struct FRewardedStatus
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPlayRewardedDelegate, FRewardedStatus, RewardStatus);
 
 UCLASS()
-class UAdCollectionBPLibrary : public UBlueprintFunctionLibrary
+class ADCOLLECTION_API UAdCollectionBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
 
